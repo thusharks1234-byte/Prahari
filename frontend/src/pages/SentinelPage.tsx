@@ -18,7 +18,7 @@ interface SentinelAlert {
 }
 
 export function SentinelPage() {
-  const { userLocation, locationName, setToastMessage } = useOutletContext<TouristContextType>();
+  const { userLocation, locationName } = useOutletContext<TouristContextType>();
   
   const [loading, setLoading] = useState(true);
   const [weatherData, setWeatherData] = useState<any>(null);

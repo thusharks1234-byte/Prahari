@@ -190,8 +190,9 @@ export function SafeRoutePlannerPage() {
           autoSwitchedToFlight = true;
           setInfoMsg(`🛫 Auto-switched to Flight mode — ${origin} to ${destination} is ${distKm.toFixed(0)} km apart. Land travel is not feasible across this distance.`);
         } else if (isLongDistance && (activeMode === 'foot' || activeMode === 'bicycle')) {
+          const prevMode = activeMode;
           activeMode = 'driving';
-          setInfoMsg(`⚠️ ${distKm.toFixed(0)} km is too far for ${activeMode === 'foot' ? 'walking' : 'cycling'}. Switched to Driving.`);
+          setInfoMsg(`⚠️ ${distKm.toFixed(0)} km is too far for ${prevMode === 'foot' ? 'walking' : 'cycling'}. Switched to Driving.`);
         }
       }
 

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Compass, Calendar, MapPin, CheckCircle2, Circle, ChevronDown, ChevronUp, Sparkles, AlertTriangle, Plane } from 'lucide-react';
+import { Compass, Calendar, MapPin, CheckCircle2, Circle, ChevronDown, ChevronUp, Sparkles, Plane } from 'lucide-react';
 import { generateGeminiContentWithRetry } from '@/lib/gemini';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
