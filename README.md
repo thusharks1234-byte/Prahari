@@ -2,10 +2,10 @@
 
 # 🛡️ Prahari (प्रहरी)
 ### Advanced Tourist Safety, Heritage Navigation & Geo-Intelligence Ecosystem
-**Built for Smart India Hackathon (SIH 2026) — Open Innovation**
+**Powered by BharatCode AI (Qwen 3.8 27B)**
 
 [![Vercel Deployment](https://img.shields.io/badge/Status-Live%20Production-success?style=for-the-badge&logo=vercel)](https://prahari-psi.vercel.app)
-[![Tech Stack](https://img.shields.io/badge/Stack-React%20%7C%20Vite%20%7C%20Supabase%20%7C%20Gemini-blue?style=for-the-badge)]()
+[![Tech Stack](https://img.shields.io/badge/Stack-React%20%7C%20Vite%20%7C%20Supabase%20%7C%20BharatCode-blue?style=for-the-badge)]()
 [![License](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)]()
 
 </div>
@@ -24,7 +24,7 @@ Tourism is a massive economic pillar, yet exploring remote terrain, dense cultur
 
 ### 🌍 1. The User Perspective (The Traveler)
 * **Seamless Digital Onboarding & Compliance:** Register securely and instantly receive a cryptographically verified **Blockchain Digital Pass (Inner Line Permit)** tailored to destination-specific requirements (e.g., Malaysia MDAC, Japan Visit Japan Web), ensuring smooth verification at remote checkpoints even offline.
-* **Intelligent Itinerary Planner:** Generate custom, destination-aware day-by-day schedules complete with local logistics, historical context, and a **Smart Prep** gear and document checklist.
+* **Intelligent Itinerary Planner:** Generate custom, destination-aware day-by-day schedules complete with local logistics, historical context, and a **Smart Prep** gear and document checklist powered by BharatCode AI.
 * **Proactive Safety & Geo-Fencing:** The live map continuously monitors position, issuing instant alerts if the traveler drifts near restricted zones or hazardous terrain.
 * **Emergency Preparedness:** Trigger the **Offline Emergency Beacon** and SOS system to broadcast precise location data to local authorities instantly.
 
@@ -39,7 +39,7 @@ Tourism is a massive economic pillar, yet exploring remote terrain, dense cultur
 
 * **Frontend:** React, Vite, Tailwind CSS (High-performance, responsive dark-mode interface).
 * **Backend & Storage:** Supabase (Secure authentication, real-time database synchronization).
-* **AI Engine:** Google Gemini (`gemini-1.5-flash`) for ultra-fast, stable generation of custom itineraries, route waypoints, and incident summaries.
+* **AI Engine:** BharatCode AI (`qwen-3.8-27b`) via `https://bharatcode.ai/api/model/v1/responses` for ultra-fast, intelligent generation of custom itineraries, route waypoints, and incident summaries (with optional Google Gemini fallback).
 
 ---
 
@@ -57,5 +57,23 @@ Tourism is a massive economic pillar, yet exploring remote terrain, dense cultur
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/mayankraj7640204-ops/prahari.git](https://github.com/mayankraj7640204-ops/prahari.git)
-   cd prahari/frontend
+   git clone https://github.com/thusharks1234-byte/Prahari.git
+   cd Prahari/frontend
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Configure Environment Variables:**
+   Create a `.env` file in `frontend/` (see `.env.example`):
+   ```env
+   VITE_BHARATCODE_API_KEY=bc_live_your_key_here
+   BHARATCODE_API_KEY=bc_live_your_key_here
+   ```
+
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```

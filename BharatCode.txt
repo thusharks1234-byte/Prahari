@@ -1,0 +1,6 @@
+Project: Prahari (प्रहरी)
+Model: qwen-3.8-27b
+Platform: BharatCode AI (https://bharatcode.ai)
+API Endpoint: https://bharatcode.ai/api/model/v1/responses
+Repository: https://github.com/thusharks1234-byte/Prahari.git
+Description: Advanced Tourist Safety, Heritage Navigation & Geo-Intelligence Ecosystem powered by BharatCode AI.
