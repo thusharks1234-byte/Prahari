@@ -1,5 +1,10 @@
 <div align="center">
 
+Team Members:
+Thushar KS
+Mayank Raj
+Chinmay R
+
 # 🛡️ Prahari (प्रहरी)
 ### Advanced Tourist Safety, Heritage Navigation & Geo-Intelligence Ecosystem
 **Powered by BharatCode AI (Qwen 3.8 27B)**
