@@ -1,7 +1,8 @@
 export const BHARATCODE_ENDPOINT = 'https://bharatcode.ai/api/model/v1/responses';
 export const BHARATCODE_DEFAULT_MODEL = 'qwen-3.8-27b';
 
-const DEFAULT_API_KEY = 'bc_live_48e67f0cd4b04d2a8f2e6146e3e87d2d_lHtE7Mwx3TG4JLsE3mW8SCG6CQN29ohuL_l36E0Qb1o';
+// Previous API: bc_live_48e67f0cd4b04d2a8f2e6146e3e87d2d_lHtE7Mwx3TG4JLsE3mW8SCG6CQN29ohuL_l36E0Qb1o
+const DEFAULT_API_KEY = 'bc_live_059f5058f1cc458e99896e95c7d324d2_jEkVDaT5oMO0vUYWDUqFlYSQDNFtHmy169kDgE_VS3Q';
 
 /**
  * Executes a call to the BharatCode Responses API using qwen-3.8-27b.
