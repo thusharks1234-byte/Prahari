@@ -127,6 +127,18 @@ export function TouristLayout() {
             .order('created_at', { ascending: false });
             
           setPermits(permitsData || []);
+        } else {
+          // Auto-initialize tourist record if not yet created
+          const { data: newTourist } = await supabase
+            .from('tourists')
+            .insert({
+              user_id: user.id,
+              full_name: user.user_metadata?.full_name || user.email?.split('@')[0] || 'Tourist',
+              phone: 'Pending'
+            })
+            .select()
+            .single();
+          if (newTourist) setTourist(newTourist);
         }
       } catch (err) {
         console.error("Error setting up tourist profile:", err);

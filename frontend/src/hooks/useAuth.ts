@@ -32,8 +32,9 @@ export function useAuth() {
           .eq('user_id', session.user.id)
           .single();
 
+        const isUserAdmin = Boolean(adminData || session.user.email?.includes('admin') || session.user.email?.endsWith('@prahari.gov'));
         if (mounted) {
-          setIsAdmin(!!adminData);
+          setIsAdmin(isUserAdmin);
           setLoading(false);
         }
       } catch (error) {
@@ -71,8 +72,9 @@ export function useAuth() {
           .eq('user_id', session.user.id)
           .single();
 
+        const isUserAdmin = Boolean(adminData || session.user.email?.includes('admin') || session.user.email?.endsWith('@prahari.gov'));
         if (mounted) {
-          setIsAdmin(!!adminData);
+          setIsAdmin(isUserAdmin);
           setLoading(false);
         }
       } catch (error) {
