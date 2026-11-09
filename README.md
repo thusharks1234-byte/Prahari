@@ -1,9 +1,9 @@
 <div align="center">
 
 Team Members:
-Thushar KS
-Mayank Raj
-Chinmay R
+Thushar KS \n
+Mayank Raj \n
+Chinmay R \n
 
 # 🛡️ Prahari (प्रहरी)
 ### Advanced Tourist Safety, Heritage Navigation & Geo-Intelligence Ecosystem
